@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTO</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Imigração</h1>
+   De qual país você veio?:  <input type="text" name="txtpaís" id="txtpaís">
+   <input type="button" value="Verificar" onclick="Imigrar()">
+   <div id="res">
+
+    <!--Sebastiaao e florentina-->
+   </div>
+   <script>
+        function Imigrar(){
+            var txtp = window.document.querySelector('input#txtpaís')
+            var res = window.document.querySelector('div#res')
+
+            var pais = txtp.value
+
+            if (pais == 'Brasil'){
+                res.innerHTML = 'Você é Brasileiro!'
+            }else {
+                res.innerHTML = 'Você é Estrangeiro!'
+            }
+        }
+   </script>
+</body>
+</html>

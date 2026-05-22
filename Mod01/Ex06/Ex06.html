@@ -7,7 +7,7 @@
     <style>
         div#area {
             font: normal 25pt Arial;
-            background-color: red;
+            background-color: green;
             color: white;
             width: 200px;
             height: 200px;
@@ -18,23 +18,27 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="cliclar()" onmouseenter="entrou()">
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
         Interaja...
     </div>
 
     <script>
-        function cliclar() {
-            var a = window.document.getElementById('area')
+        var a = window.document.getElementById('area')
+        function entrou(){
+            a.innerText = 'Entrou'
+            a.style.background = 'green'
+        }
+
+        function clicar(){
             a.innerText = 'Clicou!'
-            a.style.background = 'blue'
+            a.style.background = 'red'
         }
-    
-        function entrou() {
-            var b = window.document.getElementById('area')
-            b.innerText = 'Entrou'
-            b.style.background = 'green'
-            b.style.border = '2px solid black'
+
+        function saiu(){
+            a.innerText = 'Saiu'
+            a.style.background = 'purple'
         }
+
     </script>
 </body>
 </html>
