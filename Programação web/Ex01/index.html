@@ -8,13 +8,28 @@
         body {
             text-align: center;
         }
+        div {
+            margin: auto auto;
+            background-color: blue;
+            width: 90%;
+            height: 200px;
+            border-radius: 20px;
+        }
+        button {
+            margin: 15px;
+        }
     </style>
 </head>
 <body>
     <h1>Aprendendo JavaScript</h1>
 
     <p id="texto"></p>
-    <button onclick="eventoClick()">Clique Aqui</button>
+    <button onclick="eventoClick()">Amarelo</button>
+    <button ondblclick="eventoDblClick()">Verde</button>
+
+    <div id="teste" onmouseover="viraVermelho()" onmouseout="viraAzul()">
+        <h1 style="padding-top: 70px;">Bem-vindo!</h1>
+    </div>
 
     <script src="script.js"></script>
 </body>
