@@ -31,7 +31,7 @@ compras[5] = "açúcar"
 
 console.log(compras)
 
-*/
+
 
 const Carro = {
     marca: "Ford",
@@ -40,4 +40,9 @@ const Carro = {
     modelo: "SUV",
 }
 
-console.log(Carro.modelo)
+*/
+
+const pessoa = ["Dimitri", "Texeira", 30, "Professor"];
+pessoa.shift("Qualquer Coisa")
+
+document.getElementById("texto").innerHTML = pessoa.join(" - ");
